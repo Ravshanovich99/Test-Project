@@ -1,0 +1,17 @@
+.overlay-container {
+    width: 75%;
+    min-height: 90vh;
+    background: #F3F5F8;
+    border-radius: 6px;
+    margin: 20px;
+    padding: 20px 28px;
+    box-sizing: border-box;
+
+    .page-name {
+        padding-top: 20px;
+        color: #3D639D;
+        font-family: 'Gilroy';
+        font-size: 22px;
+        font-weight: bold;
+    }
+}

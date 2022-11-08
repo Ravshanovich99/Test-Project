@@ -1,0 +1,20 @@
+.cards-container {
+    display: flex;
+    flex-direction: column;
+
+    .cards-title {
+        font-family: 'Gilroy';
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        color: #262728;
+        padding: 20px 0;
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 15px;
+    }
+}

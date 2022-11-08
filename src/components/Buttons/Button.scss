@@ -1,0 +1,25 @@
+.button {
+    background: #3D639D;
+    border: none;
+    padding: 14px 47px 16px 30px;
+    font-family: 'Gilroy';
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    white-space: nowrap;
+    margin: 5px 0;
+    font-weight: 500;
+    width: 233px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.active {
+    button {
+        border-radius: 30px 0 0 30px;
+        background-color: #fff;
+        color: #3D639D;
+    }
+}

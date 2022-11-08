@@ -1,0 +1,89 @@
+.payments {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+
+    .payment-per-month {
+        display: flex;
+        flex-direction: row !important;
+        align-items: center;
+        border: none !important;
+
+        h3 {
+            background: #FF647C;
+            border-radius: 2px;
+            padding: 4px;
+            box-sizing: border-box;
+            color: #fff !important;
+        }
+
+        span {
+            font-family: 'Gilroy';
+            font-size: 14px;
+            color: #BBC2D0;
+            padding-left: 8px;
+            white-space: nowrap;
+        }
+    }
+}
+
+.month-btns {
+    border: none !important;
+    display: flex;
+    flex-direction: row !important;
+
+    @media (max-width: 768px) {
+        flex-direction: column !important;
+    }
+
+    width: 100%;
+
+    .month-btn {
+        width: 25%;
+
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #00C48C;
+        padding: 10px 40px;
+        box-sizing: border-box;
+        white-space: nowrap;
+        color: #fff;
+        color: #00C48C;
+        background: #fff;
+        outline: none;
+        transition: 0.3s;
+        cursor: pointer;
+
+        &:first-child {
+            border-radius: 6px 0 0 6px;
+
+            @media (max-width: 768px) {
+                border-radius: 6px 6px 0 0;
+            }
+        }
+
+        &:last-child {
+            border-radius: 0 6px 6px 0;
+
+            @media (max-width: 768px) {
+                border-radius: 0 0 6px 6px;
+            }
+        }
+
+        &.active {
+            color: #fff;
+            background: #00C48C;
+        }
+    }
+}
+
+.percent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

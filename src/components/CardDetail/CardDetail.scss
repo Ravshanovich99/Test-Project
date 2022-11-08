@@ -1,0 +1,316 @@
+* {
+    h3 {
+        margin: 0;
+    }
+}
+
+.card-detail-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 16px;
+    padding: 30px;
+    position: relative;
+
+    .shopping-cart {
+        position: absolute;
+        background: #E83274;
+        color: #fff;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 10px;
+        top: -30px;
+        cursor: pointer;
+
+        p {
+            display: none;
+            white-space: nowrap;
+        }
+
+        span {
+            display: none;
+            width: 40px;
+            height: 40px;
+            background: #fff;
+            border-radius: 50%;
+            color: #E83274;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &:hover {
+            width: 267px;
+            border-radius: 40px;
+
+            p {
+                display: inline-block;
+            }
+
+            span {
+                display: flex;
+            }
+
+            padding: 10px 16px;
+            justify-content: space-between;
+            transition: 0.5s;
+        }
+    }
+
+
+    .title {
+        font-family: 'Gilroy';
+        font-weight: bold;
+        font-size: 22px;
+        color: #3D639D;
+        padding-bottom: 30px;
+    }
+
+    .top-container {
+        display: flex;
+
+        .img-block {
+            width: 50%;
+            background: #F3F5F8;
+            border-radius: 16px;
+            position: relative;
+            padding: 20px;
+
+            .icons {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                gap: 10px;
+                margin: 12px 6px;
+
+                span {
+                    width: 36px;
+                    height: 28px;
+                    border-radius: 6px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                i {
+                    position: absolute;
+                    margin: 5px;
+                }
+
+                .icon-prize {
+                    background: #A2AEDB;
+                    color: #3855B3;
+                }
+
+                .icon-discount {
+                    background: #FFBD95;
+                    color: #FF6422;
+                }
+
+                .icon-discount-iphone {
+                    background: #AAD9AC;
+                    color: #4CAF50;
+                }
+
+                .icon-change {
+                    background: #F39DBD;
+                    color: #E83274;
+                }
+
+
+            }
+
+            .image-swiper {
+                .swiper {
+                    height: 100%;
+                    align-items: center;
+                    justify-content: center;
+
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+                }
+
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .info-block {
+            width: 50%;
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                border-bottom: 1px solid #F3F5F8;
+                font-family: 'Gilroy';
+                padding-bottom: 20px;
+
+                p {
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: #BBC2D0;
+                }
+
+                h3 {
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 16px;
+                    color: #262728;
+                }
+            }
+
+            .characters,
+            .characters div {
+                border: none;
+            }
+
+            .characters-description {
+                display: flex;
+                flex-direction: column;
+
+                p {
+                    font-family: 'Gilroy';
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: #262728;
+                    margin: 0;
+                }
+            }
+
+            .show-all {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                border: none;
+                color: #00C48C;
+                align-items: center;
+
+                h3 {
+                    color: #00C48C;
+                    font-family: 'Gilroy';
+                    font-weight: bold;
+                    font-size: 16px;
+                    cursor: pointer;
+                }
+
+                span {
+                    cursor: pointer;
+                    font-weight: bold;
+                }
+            }
+        }
+
+    }
+
+    .bottom-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Gilroy';
+
+        h3 {
+            font-weight: bolder;
+            font-size: 16px;
+            color: #262728;
+        }
+
+        div {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #F3F5F8;
+
+            &:last-child {
+                border: none;
+            }
+
+            label {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 16px;
+
+
+                span {
+                    width: 36px;
+                    height: 28px;
+                    border-radius: 6px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                i {
+                    position: absolute;
+                    margin: 5px;
+                }
+
+                .icon-prize {
+                    background: #A2AEDB;
+                    color: #3855B3;
+                }
+
+                .icon-discount {
+                    background: #FFBD95;
+                    color: #FF6422;
+                }
+
+                .icon-discount-iphone {
+                    background: #AAD9AC;
+                    color: #4CAF50;
+                }
+
+                .icon-change {
+                    background: #F39DBD;
+                    color: #E83274;
+                }
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 20px;
+                    gap: 10px;
+
+                    p {
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: #BBC2D0;
+                        margin: 0;
+                    }
+                }
+            }
+
+            input {
+                accent-color: rgb(0, 170, 0);
+                transform: scale(1.5);
+            }
+        }
+    }
+
+    .btn {
+        margin-top: 15px;
+        background: #00C48C;
+        border-radius: 26px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        outline: none;
+        padding: 16px;
+    }
+}
